@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script src="bower_components\mustache.js\mustache.js "></script>
-    <script src="bower_components\jquery\dist\jquery.min.js"></script>
-    <script src="scripty.js"></script>  
+<script src="bower_components\mustache.js\mustache.js "></script>
+<script src="bower_components\jquery\dist\jquery.min.js"></script>
+<script src="scripty.js"></script>
+
 <head>
     <meta charset="UTF-8">
     <title>Mustache</title>
 </head>
+
 <body>
+    <div id="languages">
+        <script id="languagesTpl" type="text/template">
+            <p>
+                {{{name}}} was created in the year {{year}}
+                {{#standardised}}
+                and standardised in 1997
+                {{/standardised}}
+            </p>
+        </script>
+    </div>
 
 </body>
+
 </html>
