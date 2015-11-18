@@ -10,6 +10,9 @@ $(function () {
     }
 
     var template = $("#languagesTpl").html();
-    var html = Mustache.to_html(template, data);
+    var partials = {
+        developer: "<em>{{firstName}} {{lastName}}</em>"
+    }
+    var html = Mustache.to_html(template, data, partials);
     $('#languages').html(html);
 });

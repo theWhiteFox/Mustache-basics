@@ -15,7 +15,7 @@
             <ul>
                 {{#languages}}
                 <li>
-                    {{{name}}} was created in the year {{year}} {{#developer}} and the team included {{firstName}} {{lastName}}
+                    {{{name}}} was created in the year {{year}} {{#developer}} and the team included {{>developer}}
                     {{/developer}}
                 </li>
                 {{/languages}} {{^languages}} Hey! There is no data! {{! comments}} {{/languages}}
